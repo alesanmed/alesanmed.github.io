@@ -195,12 +195,64 @@ html, body {
     /* Style adjustments for high resolution devices */
 }
 
+@media screen and (orientation: portrait) {
+    .hide-vertical {
+        display: none;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .hide-horizontal {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px){
+    img.avatar-img, .custom-card .custom-card-image img.card-responsive-img {
+        max-width: 35%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    img.avatar-img, .custom-card .custom-card-image img.card-responsive-img {
+        max-width: 50%;
+    }
+    
+}
+
+.custom-card {
+    margin: .5rem 0 1rem 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 2px;
+    padding: 24px;
+}
+
+.custom-card-footer {
+    border-top: 1px solid rgb(199, 194, 194);
+    padding-top: 5px;
+    padding-left: 0.75em;
+}
+
+.custom-card .custom-card-image img {
+    max-height: 90%;
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 1.5rem;
+}
+
 .header {
     text-align: center;
 }
 
 .parallax-container-medium {
     height: 600px;
+}
+
+.parallax-container-small {
+    height: 500px;
 }
 
 .separator {
@@ -210,6 +262,10 @@ html, body {
     margin: auto;
     width: 221px;
     height: 29px;
+}
+
+html p {
+    font-size: 1.22em;
 }
 
 .separator-white {
