@@ -292,7 +292,7 @@ html p {
 
 .bar {
     width: 90%;
-    height: 35px;
+    /*height: 35px;*/
     background: #fff;
     border-radius: 5px;
     position: relative;
@@ -301,8 +301,8 @@ html p {
 
 .bar-inner {
     width: 0;
-    height: 35px;
-    line-height: 35px;
+    height: 5px;
+    line-height: 5px;
     background: #db3a34;
     border-radius: 5px 0 0 5px;
 }
