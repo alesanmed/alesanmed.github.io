@@ -2,6 +2,10 @@
     $(function(){
         $('.parallax').parallax();
 
+        $('.materialboxed').materialbox({
+            onOpenStart: materialboxOpen
+        });
+
         var $win = $(window);
         var $stat = $('.section-technologies');
 
@@ -11,8 +15,6 @@
             $stat.each(function () {
                 var $self = $(this);
                 var prev=$self.offset();
-                console.log("Scrolltop: " + scrollTop)
-                console.log("Prevtop: " + prev.top)
                 if ( (scrollTop - prev.top) > -1000) {
                     $('.bar').each(function() {
                         $(this).find(".bar-inner").animate({
@@ -24,4 +26,14 @@
         }).scroll();
     }); // end of document ready
 })(jQuery); // end of jQuery name space
-  
+
+
+function materialboxOpen(element) {
+    var originalWidth = $(element).data('original-width');
+    var originalHeight = $(element).data('original-height');
+
+    if(originalWidth !== undefined && originalHeight !== undefined) {
+        M.Materialbox.getInstance(element).originalWidth = originalWidth;
+        M.Materialbox.getInstance(element).originalHeight = originalHeight;
+    }
+}

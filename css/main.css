@@ -243,6 +243,23 @@ html, body {
     padding: 1.5rem;
 }
 
+.card.xlarge {
+    height: 600px;
+}
+
+.card.xlarge .card-image {
+    height: 67%;
+}
+
+.card.xlarge .card-image .material-placeholder {
+    height: 100%;
+}
+
+.card.xlarge .card-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
 .header {
     text-align: center;
 }
