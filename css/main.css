@@ -336,6 +336,32 @@ html p {
     margin-bottom: 1.424rem;
 }
 
+.page-footer {
+    color: #000;
+    background-color: #dbdbdb;
+}
+
+.page-footer .footer-copyright {
+    color: #000;
+}
+
+.defines-purple {
+    background-color: #9061C2 !important;
+}
+
+.page-footer a {
+    margin-right: 0.5ex;
+}
+
+div#defines {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+div#defines a {
+    color: #b3eef5 !important;
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
