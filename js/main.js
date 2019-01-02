@@ -6,6 +6,10 @@
             onOpenStart: materialboxOpen
         });
 
+        $(document).ready(function(){
+            $('.scrollspy').scrollSpy();
+        });
+
         var $win = $(window);
         var $stat = $('.section-technologies');
 
