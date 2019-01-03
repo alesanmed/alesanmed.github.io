@@ -1,0 +1,206 @@
+@media print {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .personal-col {
+        z-index: -99;
+    }
+
+    p {
+        page-break-inside: avoid;
+    }
+
+    .statement p, .statement ul {
+        font-size: 1.05em;
+    }
+}
+
+@page {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@page:first {
+    margin-top: 0;
+}
+
+.not-first {
+    margin-top: -20px;
+}
+
+.row .col.full-height {
+    min-height: 100vh;
+}
+
+div.padded {
+    padding-left: 2em;
+}
+
+main .section {
+    padding-top: 0;
+}
+
+div.personal-info {
+    margin-bottom: 3em;
+}
+
+div.personal-info hr {
+    margin-top: 0;
+    max-width: 95%;
+}
+
+.personal-info p {
+    font-size: 1em;
+}
+
+.personal-info a {
+    -ms-word-break: break-all;
+    word-break: break-all;
+}
+
+.ratings {
+    width: 85px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.ratings:before, .ratings:after {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ratings:before {
+    color: #b6b7b7;
+    content: "\f111\f111\f111\f111\f111";
+}
+
+.ratings:after {
+    color: #373d48;
+    content: "\f111\f111\f111\f111\f111";
+    overflow: hidden;
+}
+
+.ratings.one:after {
+    content: "\f111";
+}
+
+.ratings.two:after {
+    content: "\f111\f111";
+}
+
+.ratings.three:after {
+    content: "\f111\f111\f111";
+}
+
+.ratings.four:after {
+    content: "\f111\f111\f111\f111";
+}
+
+.personal-info.languages, .personal-info.languages p {
+    position: relative;
+}
+
+ul {
+    font-size: 1.22em;
+}
+
+.experience {
+    padding-left: 1em;
+    border-left: solid 2px #dbdbdb;
+    margin-left: 1.5em;
+    padding-right: 3em;
+}
+
+.experience.hobbies {
+    border: none;
+}
+
+.experience .title::before {
+    color: #373d48;
+    content: "\f111";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    font-weight: 900;
+    position: relative;
+    top: -0.3em;
+    left: -5.25em;
+}
+
+.experience .title {
+    margin-bottom: 0.5em;
+    margin-left: 1.3em;
+}
+
+.experience .title .work-date{
+    font-weight: normal;
+    font-style: italic;
+    float: right;
+}
+
+.experience .company {
+    padding-bottom: 1em;
+    margin-left: 3em;
+    font-style: italic;
+}
+
+.experience .description {
+    padding-bottom: 1em;
+    margin-left: 3em;
+}
+
+.experience .description p {
+    font-size: 1em;
+    text-align: justify;
+}
+
+.experience .fas {
+    position: relative;
+    left: -1.56em;
+    color: white;
+    background-color: #272424;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.experience .fa-graduation-cap,
+.experience .fa-campground {
+    left: -1.6em;
+}
+
+.experience span.text {
+    position: relative;
+    left: -1em;
+}
+
+.experience.last .description {
+    padding-bottom: 0;
+}
+
+.row.padded:last-child {
+    margin-bottom: 0;
+}
+
+main > .container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.statement {
+    text-align: justify;
+    padding-right: 2em;
+}
