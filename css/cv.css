@@ -2,14 +2,35 @@
     .container {
         width: 100%;
         max-width: 100%;
+        padding-left: 2em;
     }
 
-    .personal-col {
-        z-index: -99;
+    .right-col {
+        max-width: 33.33333333333%;
+    }
+
+    .right-col h5 {
+        font-size: 1.33rem;
+    }
+
+    .right-col .personal-info p {
+        font-size: 0.9em;
+    }
+
+    span.ratings:before, span.ratings:after {
+        font-size: 10px;
+    }
+
+    span.ratings {
+        top: 4px;
     }
 
     p {
         page-break-inside: avoid;
+    }
+
+    p.address, p.phone {
+        display: block !important;
     }
 
     .statement p, .statement ul {
@@ -26,16 +47,34 @@
     margin-top: 0;
 }
 
+p.address, p.phone {
+    display: none;
+}
+
+p.first-p {
+    margin-top: 0;
+    padding-top: 1.5em;
+}
+
+.right-col {
+    margin-left: 1em;
+    padding-right: 0.5em;
+}
+
 .not-first {
     margin-top: -20px;
 }
 
-.row .col.full-height {
-    min-height: 100vh;
-}
-
 div.padded {
     padding-left: 2em;
+}
+
+div.padded-top {
+    padding-top: 1em;
+}
+
+div.padded-bottom {
+    padding-bottom: 1em;
 }
 
 main .section {
@@ -44,6 +83,10 @@ main .section {
 
 div.personal-info {
     margin-bottom: 3em;
+}
+
+div.personal-info:last-child {
+    margin-bottom: 0;
 }
 
 div.personal-info hr {
