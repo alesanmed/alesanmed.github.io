@@ -36,6 +36,10 @@
     .statement p, .statement ul {
         font-size: 1.05em;
     }
+
+    .right-col div.personal-info {
+        margin-bottom: 1.5em;
+    }
 }
 
 @page {
@@ -59,10 +63,6 @@ p.first-p {
 .right-col {
     margin-left: 1em;
     padding-right: 0.5em;
-}
-
-.not-first {
-    margin-top: -20px;
 }
 
 div.padded {
@@ -164,6 +164,7 @@ ul {
     border-left: solid 2px #dbdbdb;
     margin-left: 1.5em;
     padding-right: 3em;
+    margin-top: -20px;
 }
 
 .experience.hobbies {
@@ -232,6 +233,10 @@ ul {
 
 .experience.last .description {
     padding-bottom: 0;
+}
+
+.experience.first {
+    margin-top: 0px;
 }
 
 .row.padded:last-child {
