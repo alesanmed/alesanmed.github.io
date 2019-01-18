@@ -357,3 +357,38 @@ div#defines {
 div#defines a {
     color: #b3eef5 !important;
 }
+
+.col.m4.s12.exp-image img {
+    border-radius: 5%;
+}
+
+.experience .title {
+    font-size: 1.5em;
+}
+
+.experience .company {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #2c8000;
+}
+
+.experience p {
+    font-size: 1.1em;
+}
+
+.experience.row {
+    margin-bottom: 40px;
+}
+
+.work-logos {
+    margin-bottom: 7ex;
+}
+
+.name {
+    font-size: 170%;
+}
+
+.work-date {
+    font-weight: normal;
+    font-size: 80%;
+}
