@@ -1,0 +1,394 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body {
+    height: 100%;
+}
+
+.parallax-container {
+    height: 100%;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media screen and (orientation: portrait) {
+    .hide-vertical {
+        display: none;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .hide-horizontal {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px){
+    img.avatar-img, .custom-card .custom-card-image img.card-responsive-img {
+        max-width: 35%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    img.avatar-img, .custom-card .custom-card-image img.card-responsive-img {
+        max-width: 50%;
+    }
+    
+}
+
+.custom-card {
+    margin: .5rem 0 1rem 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 2px;
+    padding: 24px;
+}
+
+.custom-card-footer {
+    border-top: 1px solid rgb(199, 194, 194);
+    padding-top: 5px;
+    padding-left: 0.75em;
+}
+
+.custom-card .custom-card-image img {
+    max-height: 90%;
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.card.xlarge {
+    height: 750px;
+    overflow: auto;
+}
+
+.card.xlarge .card-image {
+    height: 67%;
+}
+
+.card.xlarge .card-image .material-placeholder {
+    height: 100%;
+}
+
+.card.xlarge .card-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    text-align: center;
+}
+
+.parallax-container-medium {
+    height: 600px;
+}
+
+.parallax-container-small {
+    height: 500px;
+}
+
+.separator {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    width: 221px;
+    height: 29px;
+}
+
+html p {
+    font-size: 1.22em;
+}
+
+.separator-white {
+    background-image: url('../img/separator_white.png');
+}
+
+.separator-black {
+    background-image: url('../img/separator_black.png');
+}
+
+.separator-margin-top {
+    margin-top: 1.9466666667rem;
+}
+
+.separator-margin-bottom {
+    margin-bottom: 1.424rem;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+}
+
+.bar {
+    width: 90%;
+    /*height: 35px;*/
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    transition: all 2s linear;
+}
+
+.bar-inner {
+    width: 0;
+    height: 5px;
+    line-height: 5px;
+    background: #db3a34;
+    border-radius: 5px 0 0 5px;
+}
+
+.bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 18px;
+}
+
+.bar-container {
+    margin-bottom: 1.424rem;
+}
+
+.page-footer {
+    color: #000;
+    background-color: #dbdbdb;
+}
+
+.page-footer .footer-copyright {
+    color: #000;
+}
+
+.defines-purple {
+    background-color: #9061C2 !important;
+}
+
+.page-footer a {
+    margin-right: 0.5ex;
+}
+
+div#defines {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+div#defines a {
+    color: #b3eef5 !important;
+}
+
+.col.m4.s12.exp-image img {
+    border-radius: 5%;
+}
+
+.experience .title {
+    font-size: 1.5em;
+}
+
+.experience .company {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #2c8000;
+}
+
+.experience p {
+    font-size: 1.1em;
+}
+
+.experience.row {
+    margin-bottom: 40px;
+}
+
+.work-logos {
+    margin-bottom: 7ex;
+}
+
+.name {
+    font-size: 170%;
+}
+
+.work-date {
+    font-weight: normal;
+    font-size: 80%;
+}
