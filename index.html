@@ -31,7 +31,7 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container parallax-container valign-wrapper">
     <div class="center-align row">
       <div class="col s12 white-text">
         <h4>I'll introduce myself...</h4>
@@ -39,7 +39,19 @@
         <h3><span class="name">Ale Sanchez</span></h3>
       </div>
     </div>
-    <div class="parallax"><img src="img/Presentacion.jpg" width="100%" height="auto"></div>
+    <div class="parallax hide-vertical">
+      <img srcset="img/Presentation_xs.jpg 718w,
+                   img/Presentation_s.jpg 1035w,
+                   img/Presentation_m.jpg 1395w,
+                   img/Presentation_l.jpg 1952w,
+                   img/Presentation_xl.jpg 2069w,
+                   img/Presentation_xxl.jpg 3861w"
+        sizes="100%" width="100%">
+    </div>
+
+    <div class="parallax hide-horizontal">
+      <img src="img/Presentation_vertical.jpg" width="auto" height="100%">
+    </div>
   </div>
 
   <div id="know-ale" class="section white scrollspy">
